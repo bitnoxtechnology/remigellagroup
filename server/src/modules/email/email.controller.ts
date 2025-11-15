@@ -13,17 +13,19 @@ export class EmailController {
 
   public sendContactUsEmail = asyncHandler(
     async (req: Request, res: Response) => {
-      const { name, email, serviceType, message } = req.body;
+      const { name, email, phone, service, company, message } = req.body;
 
-      if (!name || !email || !serviceType || !message) {
+      if (!name || !email || !service || !message || !company || !phone) {
         throw new BadRequestException("All fields are required");
       }
 
       await this.emailService.sendContactUsEmail({
         name,
         email,
-        serviceType,
+        service,
         message,
+        company,
+        phone,
       });
 
       return res.status(HTTPSTATUSCODE.OK).json({

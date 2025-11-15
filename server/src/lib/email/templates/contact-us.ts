@@ -5,13 +5,17 @@ const clientOrigin = config.CLIENT_ORIGIN;
 export const contactUsFormTemplate = ({
   name,
   email,
-  serviceType,
+  service,
   message,
+  company,
+  phone,
 }: {
   name: string;
   email: string;
-  serviceType: string;
+  service: string;
   message: string;
+  company: string;
+  phone: string;
 }) => ({
   to: "info@remigellagroup.com",
   subject: `New Contact Message from ${name}`,
@@ -20,7 +24,9 @@ You have received a new message via Contact Us form on (${clientOrigin}).
 
 Name: ${name}
 Email: ${email}
-Service Type: ${serviceType}
+Company: ${company}
+Phone: ${phone}
+Service Type: ${service}
 Message:
 ${message}
   `,
@@ -89,8 +95,14 @@ ${message}
             <div class="label">Sender Email:</div>
             <div class="value">${email}</div>
 
+            <div class="label">Company:</div>
+            <div class="value">${company}</div>
+
+            <div class="label">Phone:</div>
+            <div class="value">${phone}</div>
+
             <div class="label">Service Type:</div>
-            <div class="value">${serviceType}</div>
+            <div class="value">${service}</div>
 
             <div class="label">Message:</div>
             <div class="value">${message.replace(/\n/g, "<br/>")}</div>

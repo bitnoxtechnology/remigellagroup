@@ -1,16 +1,19 @@
-import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import ScrollToTop from './Components/ScrollToTop'; // Add this
+import { Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
+import ScrollToTop from "./Components/ScrollToTop"; // Add this
 
 // Pages
-import HomePage from './Pages/HomePage';
-import AboutPage from './Pages/AboutPage';
-import ContactPage from './Pages/ContactPage';
+import HomePage from "./Pages/HomePage";
+import AboutPage from "./Pages/AboutPage";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   return (
     <>
       <ScrollToTop /> {/* Add this */}
+      <ToastContainer position="bottom-right" />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
