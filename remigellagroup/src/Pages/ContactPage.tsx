@@ -30,6 +30,7 @@ import officeImg1 from "../assets/Hero1.jpeg";
 import officeImg2 from "../assets/Hero3.jpeg";
 import API from "../Services/axios-client";
 import { toast } from "react-toastify";
+import Meta from "../Components/Meta";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,8 +87,8 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await API.post("/email/contact-us", formData);
-      console.log(response.data);
+      await API.post("/email/contact-us", formData);
+      // console.log(response.data);
       setIsSubmitted(true);
       setIsSubmitting(false);
       setFormData({
@@ -101,7 +102,7 @@ const ContactPage = () => {
       toast.success("Message sent successfully! We'll get back to you soon.");
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
-      console.log(error);
+      // console.log(error);
       setIsSubmitting(false);
       toast.error(error.message);
     }
@@ -188,6 +189,7 @@ const ContactPage = () => {
 
   return (
     <>
+      <Meta title="Contact Us | Remigellagroup" />
       <Navbar />
       <div className="contactpage-container" ref={sectionRef}>
         {/* Hero Section */}
