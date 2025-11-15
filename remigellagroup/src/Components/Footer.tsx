@@ -1,6 +1,6 @@
-import { 
-  Mail, 
-  Phone, 
+import {
+  Mail,
+  Phone,
   MapPin,
   Facebook,
   Twitter,
@@ -8,42 +8,44 @@ import {
   Instagram,
   ArrowUp,
   Heart,
-  ExternalLink
-} from 'lucide-react';
-import { motion } from 'framer-motion';
-import SecondaryLogo from "../assets/Secondary-logo.png"
-import '../Styles/Footer.css';
-import { Link } from 'react-router-dom';
+  ExternalLink,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import SecondaryLogo from "../assets/Secondary-logo.png";
+import "../Styles/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const currentYear = new Date().getFullYear();
 
   const companies = [
-    { name: 'Remigella Interlink', link: 'https://www.ohamadikefcc.org' },
-    { name: 'Ohamadike Foundation', link: 'https://www.ohamadikefoundation.org' },
-
+    { name: "Ohamadike FC", link: "https://www.ohamadikefcc.org" },
+    {
+      name: "Ohamadike Foundation",
+      link: "https://www.ohamadikefoundation.org",
+    },
   ];
 
   const quickLinks = [
-    { name: 'About Us', link: '#about' },
-    { name: 'Our Services', link: '#services' },
-    { name: 'All Companies', link: '#companies' },
-    { name: 'Careers', link: '#' },
-    { name: 'News & Updates', link: '#' },
-    { name: 'Sustainability', link: '#' },
+    { name: "About Us", link: "#about" },
+    { name: "Our Services", link: "#services" },
+    { name: "All Companies", link: "#companies" },
+    { name: "Careers", link: "#" },
+    { name: "News & Updates", link: "#" },
+    { name: "Sustainability", link: "#" },
   ];
 
   const services = [
-    { name: 'Construction', link: '#services' },
-    { name: 'Oil & Gas', link: '#services' },
-    { name: 'Real Estate', link: '#services' },
-    { name: 'Transportation', link: '#services' },
-    { name: 'Healthcare', link: '#services' },
-    { name: 'Agriculture', link: '#services' },
+    { name: "Construction", link: "#services" },
+    { name: "Oil & Gas", link: "#services" },
+    { name: "Real Estate", link: "#services" },
+    { name: "Transportation", link: "#services" },
+    { name: "Healthcare", link: "#services" },
+    { name: "Agriculture", link: "#services" },
   ];
 
   return (
@@ -55,12 +57,12 @@ const Footer = () => {
             {/* Company Info */}
             <div className="footer-column company-info">
               <div className="footer-logo">
-               <img src={SecondaryLogo} alt="" />
+                <img src={SecondaryLogo} alt="" />
               </div>
               <p className="company-description">
-                Building Africa's future since 1993. A conglomerate of 22 companies 
-                delivering excellence across multiple industries with a commitment to 
-                innovation and customer satisfaction.
+                Building Africa's future since 1993. A conglomerate of 22
+                companies delivering excellence across multiple industries with
+                a commitment to innovation and customer satisfaction.
               </p>
               <div className="company-stats">
                 <div className="stat">
@@ -83,12 +85,12 @@ const Footer = () => {
               <h4>Our Companies</h4>
               <ul className="footer-links">
                 {companies.map((company, idx) => (
-                  <motion.li 
+                  <motion.li
                     key={idx}
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <Link to={company.link}>
+                    <Link to={company.link} target="_blank" rel="noreferrer">
                       <ExternalLink size={14} />
                       {company.name}
                     </Link>
@@ -102,7 +104,7 @@ const Footer = () => {
               <h4>Quick Links</h4>
               <ul className="footer-links">
                 {quickLinks.map((link, idx) => (
-                  <motion.li 
+                  <motion.li
                     key={idx}
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
@@ -111,10 +113,10 @@ const Footer = () => {
                   </motion.li>
                 ))}
               </ul>
-              <h4 style={{ marginTop: '2rem' }}>Services</h4>
+              <h4 style={{ marginTop: "2rem" }}>Services</h4>
               <ul className="footer-links">
                 {services.map((service, idx) => (
-                  <motion.li 
+                  <motion.li
                     key={idx}
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
@@ -133,7 +135,10 @@ const Footer = () => {
                   <MapPin size={20} />
                   <div>
                     <strong>Head Office</strong>
-                    <p>2, Olowu Street, Off Obafemi Awolowo way, Ikeja, Lagos, Nigeria</p>
+                    <p>
+                      2, Olowu Street, Off Obafemi Awolowo way, Ikeja, Lagos,
+                      Nigeria
+                    </p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -146,14 +151,18 @@ const Footer = () => {
                 <div className="contact-item">
                   <Mail size={20} />
                   <div>
-                    <a href="mailto:info@remigellagroup.com">info@remigellagroup.com</a>
-                    <a href="mailto:chairman@remigellagroup.com">chairman@remigellagroup.com</a>
+                    <a href="mailto:info@remigellagroup.com">
+                      info@remigellagroup.com
+                    </a>
+                    <a href="mailto:chairman@remigellagroup.com">
+                      chairman@remigellagroup.com
+                    </a>
                   </div>
                 </div>
               </div>
 
               {/* Newsletter */}
-              <div className="newsletter">
+              {/* <div className="newsletter">
                 <h5>Subscribe to Newsletter</h5>
                 <form className="newsletter-form">
                   <input 
@@ -169,38 +178,38 @@ const Footer = () => {
                     <Mail size={18} />
                   </motion.button>
                 </form>
-              </div>
+              </div> */}
 
               {/* Social Media */}
               <div className="social-media">
                 <h5>Follow Us</h5>
                 <div className="social-links">
-                  <motion.a 
-                    href="#" 
+                  <motion.a
+                    href="#"
                     className="social-link"
                     whileHover={{ scale: 1.2, rotate: 10 }}
                     whileTap={{ scale: 0.9 }}
                   >
                     <Facebook size={20} />
                   </motion.a>
-                  <motion.a 
-                    href="#" 
+                  <motion.a
+                    href="#"
                     className="social-link"
                     whileHover={{ scale: 1.2, rotate: 10 }}
                     whileTap={{ scale: 0.9 }}
                   >
                     <Twitter size={20} />
                   </motion.a>
-                  <motion.a 
-                    href="#" 
+                  <motion.a
+                    href="#"
                     className="social-link"
                     whileHover={{ scale: 1.2, rotate: 10 }}
                     whileTap={{ scale: 0.9 }}
                   >
                     <Linkedin size={20} />
                   </motion.a>
-                  <motion.a 
-                    href="#" 
+                  <motion.a
+                    href="#"
                     className="social-link"
                     whileHover={{ scale: 1.2, rotate: 10 }}
                     whileTap={{ scale: 0.9 }}
@@ -220,7 +229,8 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="copyright">
               <p>
-                © {currentYear} Remigella International Group. All rights reserved.
+                © {currentYear} Remigella International Group. All rights
+                reserved.
               </p>
               <p className="tagline">
                 Customers First • Excellence • Innovation
