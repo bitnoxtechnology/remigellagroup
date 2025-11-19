@@ -2,9 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-import ScrollToTop from "./Components/ScrollToTop"; // Add this
+import ScrollToTop from "./Components/ScrollToTop";
 
-// Pages
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
 import ContactPage from "./Pages/ContactPage";
@@ -12,7 +11,7 @@ import ContactPage from "./Pages/ContactPage";
 function App() {
   return (
     <>
-      <ScrollToTop /> {/* Add this */}
+      <ScrollToTop />
       <ToastContainer position="bottom-right" />
       <Routes>
         <Route path="/" element={<HomePage />} />

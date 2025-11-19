@@ -260,3 +260,57 @@
     width: 100%;
   }
 }
+
+.company-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(243, 186, 0, 0.05);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.company-contact svg {
+  color: #F3BA00;
+  flex-shrink: 0;
+}
+
+.company-email {
+  color: #4b5563;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.company-email:hover {
+  color: #F3BA00;
+  text-decoration: underline;
+}
+
+.company-reg {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  background: rgba(107, 114, 128, 0.08);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.company-reg svg {
+  color: #6b7280;
+  flex-shrink: 0;
+}
+
+.company-reg span {
+  color: #4b5563;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: monospace;
+}

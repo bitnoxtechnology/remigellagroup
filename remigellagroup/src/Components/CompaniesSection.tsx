@@ -19,6 +19,8 @@ import {
   FileText,
   ArrowRight,
   MapPin,
+  Mail,
+  FileCheck,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { motion } from "framer-motion";
@@ -37,6 +39,8 @@ interface Company {
   description: string;
   location?: string;
   href?: string;
+  email?: string;
+  regNo?: string;
 }
 
 const CompaniesSection = () => {
@@ -70,13 +74,15 @@ const CompaniesSection = () => {
 
   const companies: Company[] = [
     {
-      name: "Remigella Interlink",
+      name: "Remigella Interlink Associate Nigeria Limited",
       icon: Building2,
       sector: "Trading & Commerce",
       year: "1993",
       description:
         "Pioneer company specializing in imports, exports and general trading",
       location: "Lagos, Nigeria",
+      email: "info@remigellainterlink.com",
+      regNo: "RC/NO: 216708",
     },
     {
       name: "Ohamadike Foundation",
@@ -87,15 +93,19 @@ const CompaniesSection = () => {
         "Humanitarian organization supporting education, healthcare and community development",
       location: "Nigeria",
       href: "https://www.ohamadikefoundation.org",
+      email: "info@ohamadikefoundation.org",
+      regNo: "CAC/IT/NO: 38276",
     },
     {
-      name: "Villa Franca Travels",
+      name: "Villa Franca Global Travels and Tours Nigeria",
       icon: Plane,
       sector: "Tourism & Travel",
       year: "2017",
       description:
         "Full-service travel agency offering global tourism and corporate travel solutions",
       location: "Lagos, Nigeria",
+      email: "info@villafrancatravels.com",
+      regNo: "RC 1437811",
     },
     {
       name: "Bella Vita Properties",
@@ -105,6 +115,7 @@ const CompaniesSection = () => {
       description:
         "Premier real estate development and property management services",
       location: "Nigeria & UK",
+      email: "info@bellavitaproperties.com",
     },
     {
       name: "Valpantena Oil & Gas",
@@ -114,6 +125,7 @@ const CompaniesSection = () => {
       description:
         "Oil and gas exploration, marketing and petroleum products distribution",
       location: "Multi-National",
+      email: "info@valpantenaoilandgas.com",
     },
     {
       name: "Grand Afrique Foods",
@@ -123,23 +135,28 @@ const CompaniesSection = () => {
       description:
         "Comprehensive foodservice distribution and hospitality solutions",
       location: "Nigeria",
+      email: "info@grandafriquefoods.com",
     },
     {
-      name: "Dansantoria Construction",
+      name: "Dansantoria Global Construction Company Nig. Limited",
       icon: Hammer,
       sector: "Construction",
       year: "2018",
       description:
         "Building and road construction with experienced architects and engineers",
       location: "Nigeria",
+      email: "info@dansantoriaconstruction.com",
+      regNo: "RC 1496527",
     },
     {
-      name: "Bella Strada Transport",
+      name: "Bellastrada Transport Company Nig. Limited",
       icon: Truck,
       sector: "Logistics",
       year: "2018",
       description: "Road transport and logistics services across West Africa",
       location: "Nigeria",
+      email: "info@bellastradatransport.com",
+      regNo: "RC 1495951",
     },
     {
       name: "Texas Global Kitchens",
@@ -148,15 +165,18 @@ const CompaniesSection = () => {
       year: "2019",
       description: "Restaurant chain serving quality meals to millions daily",
       location: "Nigeria",
+      email: "info@texasglobalkitchens.com",
     },
     {
-      name: "Propensity Pharma",
+      name: "Propensity Pharmaceuticals Limited",
       icon: Pill,
       sector: "Pharmaceuticals",
       year: "2019",
       description:
         "Quality pharmaceutical ingredients and products distribution",
       location: "USA & Nigeria",
+      email: "info@propensitypharma.com",
+      regNo: "RC 1561389",
     },
     {
       name: "Primavera Farms",
@@ -165,15 +185,18 @@ const CompaniesSection = () => {
       year: "2019",
       description: "Large-scale cassava farming and agricultural production",
       location: "Ogun State",
+      email: "info@primaverafarms.com",
     },
     {
-      name: "Verona Hospital",
+      name: "Verona International Hospital Limited",
       icon: Hospital,
       sector: "Healthcare",
       year: "2019",
       description:
         "State-of-the-art medical facility with international standards",
       location: "Nigeria",
+      email: "info@veronahospital.com",
+      regNo: "RC 1561474",
     },
     {
       name: "Prima Grado Schools",
@@ -182,6 +205,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "International school providing world-class education",
       location: "Nigeria",
+      email: "info@primagradoschools.com",
     },
     {
       name: "Verona Foreign Exchange",
@@ -190,6 +214,7 @@ const CompaniesSection = () => {
       year: "2018",
       description: "Foreign exchange and money transfer services",
       location: "USA & Nigeria",
+      email: "info@veronafx.com",
     },
     {
       name: "Akuma Shipping",
@@ -198,6 +223,7 @@ const CompaniesSection = () => {
       year: "2020",
       description: "Global shipping and maritime transport solutions",
       location: "UK",
+      email: "info@akumashipping.com",
     },
     {
       name: "Sicurezza Security",
@@ -206,6 +232,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "Professional security and protection services",
       location: "Nigeria",
+      email: "info@sicurezzasecurity.com",
     },
     {
       name: "Rengo Foods",
@@ -214,6 +241,7 @@ const CompaniesSection = () => {
       year: "2021",
       description: "Premium table water production and distribution",
       location: "Nigeria",
+      email: "info@rengofoods.com",
     },
     {
       name: "Ohamadike FC",
@@ -223,6 +251,7 @@ const CompaniesSection = () => {
       description: "Professional football club developing African talent",
       location: "Nigeria",
       href: "https://www.ohamadikefcc.org",
+      email: "info@ohamadikefcc.org",
     },
   ];
 
@@ -305,6 +334,22 @@ const CompaniesSection = () => {
                     </span>
                   )}
                 </div>
+
+                {company.email && (
+                  <div className="company-contact">
+                    <Mail size={16} />
+                    <a href={`mailto:${company.email}`} className="company-email">
+                      {company.email}
+                    </a>
+                  </div>
+                )}
+
+                {company.regNo && (
+                  <div className="company-reg">
+                    <FileCheck size={16} />
+                    <span>{company.regNo}</span>
+                  </div>
+                )}
 
                 {company.href ? (
                   <Link to={company.href} target="_blank" rel="noreferrer">
