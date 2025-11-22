@@ -65,18 +65,18 @@ export class EmailService {
   public sendContactUsEmailOhamadikeFoundation = async ({
     name,
     email,
-    serviceType,
+    subject,
     message,
   }: {
     name: string;
     email: string;
-    serviceType: string;
+    subject: string;
     message: string;
   }): Promise<void> => {
     const emailContent = contactUsFormTemplate3({
       name,
       email,
-      serviceType,
+      subject,
       message,
     });
 
