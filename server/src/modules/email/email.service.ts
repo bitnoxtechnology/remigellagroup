@@ -39,18 +39,15 @@ export class EmailService {
   public sendContactUsEmailOhamadikeFC = async ({
     name,
     email,
-    serviceType,
     message,
   }: {
     name: string;
     email: string;
-    serviceType: string;
     message: string;
   }): Promise<void> => {
     const emailContent = contactUsFormTemplate2({
       name,
       email,
-      serviceType,
       message,
     });
 

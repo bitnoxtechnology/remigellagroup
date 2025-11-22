@@ -35,16 +35,15 @@ export class EmailController {
   );
   public sendContactUsEmailOhamadikeFC = asyncHandler(
     async (req: Request, res: Response) => {
-      const { name, email, serviceType, message } = req.body;
+      const { name, email, message } = req.body;
 
-      if (!name || !email || !serviceType || !message) {
+      if (!name || !email || !message) {
         throw new BadRequestException("All fields are required");
       }
 
       await this.emailService.sendContactUsEmailOhamadikeFC({
         name,
         email,
-        serviceType,
         message,
       });
 

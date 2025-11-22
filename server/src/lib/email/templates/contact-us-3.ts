@@ -13,7 +13,8 @@ export const contactUsFormTemplate3 = ({
   serviceType: string;
   message: string;
 }) => ({
-  to: "info@ohamadikefoundation.org",
+  to: "alagbarason@gmail.com",
+  // to: "info@ohamadikefoundation.org",
   subject: `New Contact Message from ${name}`,
   text: `
 You have received a new message via Contact Us form on (${clientOrigin}).

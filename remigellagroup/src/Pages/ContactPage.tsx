@@ -100,11 +100,12 @@ const ContactPage = () => {
         message: "",
       });
       toast.success("Message sent successfully! We'll get back to you soon.");
+
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       // console.log(error);
       setIsSubmitting(false);
-      toast.error(error.message);
+      toast.error("Failed to send message. Please try again later.");
     }
   };
 
