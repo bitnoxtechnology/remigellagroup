@@ -11,8 +11,8 @@ export const contactUsFormTemplate2 = ({
   email: string;
   message: string;
 }) => ({
-  to: "alagbarason@gmail.com",
-  // to: "info@ohamadikefcc.org",
+  // to: "alagbarason@gmail.com",
+  to: "info@ohamadikefcc.org",
   subject: `New Contact Message from ${name}`,
   text: `
 You have received a new message via Contact Us form on (${clientOrigin}).

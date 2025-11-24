@@ -17,8 +17,7 @@ export const contactUsFormTemplate = ({
   company: string;
   phone: string;
 }) => ({
-  // to: "info@remigellagroup.com",
-  to: "alagbarason@gmail.com",
+  to: "info@remigellagroup.com",
   subject: `New Contact Message from ${name}`,
   text: `
 You have received a new message via Contact Us form on (${clientOrigin}).
