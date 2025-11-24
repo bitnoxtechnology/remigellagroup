@@ -74,7 +74,7 @@ const CompaniesSection = () => {
 
   const companies: Company[] = [
     {
-      name: "Remigella Interlink Associate Nigeria Limited",
+      name: "Remigella Interlink & Associate Nigeria Limited",
       icon: Building2,
       sector: "Trading & Commerce",
       year: "1993",
@@ -85,7 +85,7 @@ const CompaniesSection = () => {
       regNo: "RC/NO: 216708",
     },
     {
-      name: "Ohamadike Foundation",
+      name: "Ohamadike International Foundation",
       icon: Heart,
       sector: "Non-Profit",
       year: "2010",
@@ -97,7 +97,7 @@ const CompaniesSection = () => {
       regNo: "CAC/IT/NO: 38276",
     },
     {
-      name: "Villa Franca Global Travels and Tours Nigeria",
+      name: "Villa Franca Global Travels and Tours Limited",
       icon: Plane,
       sector: "Tourism & Travel",
       year: "2017",
@@ -108,7 +108,7 @@ const CompaniesSection = () => {
       regNo: "RC 1437811",
     },
     {
-      name: "Bella Vita Properties",
+      name: "Bella Vita Properties UK Limited",
       icon: Home,
       sector: "Real Estate",
       year: "2018",
@@ -118,7 +118,7 @@ const CompaniesSection = () => {
       email: "bellavita@remigellagroup.com",
     },
     {
-      name: "Valpantena Oil & Gas",
+      name: "Valpantena Global Oil and Gas UK Limited",
       icon: Fuel,
       sector: "Energy",
       year: "2018",
@@ -128,7 +128,7 @@ const CompaniesSection = () => {
       email: "valpantena@remigellagroup.com",
     },
     {
-      name: "Grand Afrique Foods",
+      name: "Grand Afrique Global Foods Limited",
       icon: UtensilsCrossed,
       sector: "Food Service",
       year: "2019",
@@ -159,7 +159,16 @@ const CompaniesSection = () => {
       regNo: "RC 1495951",
     },
     {
-      name: "Texas Global Kitchens",
+      name: "Remigus General Trading LLC",
+      icon: Building2,
+      sector: "Trading",
+      year: "1993",
+      description: "Specialize in general trading",
+      location: "Lagos, Nigeria",
+      email: "gentrade@remigellagroup.com",
+    },
+    {
+      name: "Texas Kitchen Limited",
       icon: ShoppingBag,
       sector: "Quick Service Restaurants",
       year: "2019",
@@ -179,7 +188,7 @@ const CompaniesSection = () => {
       regNo: "RC 1561389",
     },
     {
-      name: "Primavera Farms",
+      name: "Primavera Global Farms Limited",
       icon: Wheat,
       sector: "Agriculture",
       year: "2019",
@@ -188,7 +197,7 @@ const CompaniesSection = () => {
       email: "primavera@remigellagroup.com",
     },
     {
-      name: "Verona International Hospital Limited",
+      name: "Verona Int. Hospital Limited",
       icon: Hospital,
       sector: "Healthcare",
       year: "2019",
@@ -199,7 +208,7 @@ const CompaniesSection = () => {
       regNo: "RC 1561474",
     },
     {
-      name: "Prima Grado Schools",
+      name: "Prima Grado Int. Schools Limited",
       icon: GraduationCap,
       sector: "Education",
       year: "2019",
@@ -208,7 +217,7 @@ const CompaniesSection = () => {
       email: "primagado@remigellagroup.com",
     },
     {
-      name: "Verona Foreign Exchange",
+      name: "Verona Int. Forex Nig Limited",
       icon: FileText,
       sector: "Financial Services",
       year: "2018",
@@ -217,7 +226,7 @@ const CompaniesSection = () => {
       email: "veronaforex@remigellagroup.com",
     },
     {
-      name: "Akuma Shipping",
+      name: "Akuma Global Shipping Company UK Limited",
       icon: Ship,
       sector: "Maritime",
       year: "2020",
@@ -226,7 +235,16 @@ const CompaniesSection = () => {
       email: "akuma@remigellagroup.com",
     },
     {
-      name: "Sicurezza Security",
+      name: "Remigella Int. SARL",
+      icon: Droplet,
+      sector: "Manufacturing",
+      year: "2021",
+      description: "Remigella international",
+      location: "Nigeria",
+      email: "international@remigellagroup.com",
+    },
+    {
+      name: "Sicurezza Global Security Company Limited",
       icon: ShieldCheck,
       sector: "Security Services",
       year: "2019",
@@ -235,7 +253,7 @@ const CompaniesSection = () => {
       email: "sicurezza@remigellagroup.com",
     },
     {
-      name: "Rengo Foods",
+      name: "Rengo Foods Limited",
       icon: Droplet,
       sector: "Manufacturing",
       year: "2021",
@@ -244,7 +262,7 @@ const CompaniesSection = () => {
       email: "rengo@remigellagroup.com",
     },
     {
-      name: "Ohamadike FC",
+      name: "Ohamadike Int. Football Club",
       icon: Building2,
       sector: "Sports",
       year: "2017",
