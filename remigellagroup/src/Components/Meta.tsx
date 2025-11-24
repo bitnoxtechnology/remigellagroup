@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-
 interface MetaProps {
   title?: string;
   description?: string;

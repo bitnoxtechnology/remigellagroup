@@ -81,7 +81,7 @@ const CompaniesSection = () => {
       description:
         "Pioneer company specializing in imports, exports and general trading",
       location: "Lagos, Nigeria",
-      email: "info@remigellainterlink.com",
+      email: "remigella@remigellagroup.com",
       regNo: "RC/NO: 216708",
     },
     {
@@ -104,7 +104,7 @@ const CompaniesSection = () => {
       description:
         "Full-service travel agency offering global tourism and corporate travel solutions",
       location: "Lagos, Nigeria",
-      email: "info@villafrancatravels.com",
+      email: "villafranca@remigellagroup.com",
       regNo: "RC 1437811",
     },
     {
@@ -115,7 +115,7 @@ const CompaniesSection = () => {
       description:
         "Premier real estate development and property management services",
       location: "Nigeria & UK",
-      email: "info@bellavitaproperties.com",
+      email: "bellavita@remigellagroup.com",
     },
     {
       name: "Valpantena Oil & Gas",
@@ -125,7 +125,7 @@ const CompaniesSection = () => {
       description:
         "Oil and gas exploration, marketing and petroleum products distribution",
       location: "Multi-National",
-      email: "info@valpantenaoilandgas.com",
+      email: "valpantena@remigellagroup.com",
     },
     {
       name: "Grand Afrique Foods",
@@ -135,7 +135,7 @@ const CompaniesSection = () => {
       description:
         "Comprehensive foodservice distribution and hospitality solutions",
       location: "Nigeria",
-      email: "info@grandafriquefoods.com",
+      email: "grandafrique@remigellagroup.com",
     },
     {
       name: "Dansantoria Global Construction Company Nig. Limited",
@@ -145,7 +145,7 @@ const CompaniesSection = () => {
       description:
         "Building and road construction with experienced architects and engineers",
       location: "Nigeria",
-      email: "info@dansantoriaconstruction.com",
+      email: "dansantoria@remigellagroup.com",
       regNo: "RC 1496527",
     },
     {
@@ -155,7 +155,7 @@ const CompaniesSection = () => {
       year: "2018",
       description: "Road transport and logistics services across West Africa",
       location: "Nigeria",
-      email: "info@bellastradatransport.com",
+      email: "bellastrada@remigellagroup.com",
       regNo: "RC 1495951",
     },
     {
@@ -165,7 +165,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "Restaurant chain serving quality meals to millions daily",
       location: "Nigeria",
-      email: "info@texasglobalkitchens.com",
+      email: "texas@remigellagroup.com",
     },
     {
       name: "Propensity Pharmaceuticals Limited",
@@ -175,7 +175,7 @@ const CompaniesSection = () => {
       description:
         "Quality pharmaceutical ingredients and products distribution",
       location: "USA & Nigeria",
-      email: "info@propensitypharma.com",
+      email: "propensity@remigellagroup.com",
       regNo: "RC 1561389",
     },
     {
@@ -185,7 +185,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "Large-scale cassava farming and agricultural production",
       location: "Ogun State",
-      email: "info@primaverafarms.com",
+      email: "primavera@remigellagroup.com",
     },
     {
       name: "Verona International Hospital Limited",
@@ -195,7 +195,7 @@ const CompaniesSection = () => {
       description:
         "State-of-the-art medical facility with international standards",
       location: "Nigeria",
-      email: "info@veronahospital.com",
+      email: "verona@remigellagroup.com",
       regNo: "RC 1561474",
     },
     {
@@ -205,7 +205,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "International school providing world-class education",
       location: "Nigeria",
-      email: "info@primagradoschools.com",
+      email: "primagado@remigellagroup.com",
     },
     {
       name: "Verona Foreign Exchange",
@@ -214,7 +214,7 @@ const CompaniesSection = () => {
       year: "2018",
       description: "Foreign exchange and money transfer services",
       location: "USA & Nigeria",
-      email: "info@veronafx.com",
+      email: "veronaforex@remigellagroup.com",
     },
     {
       name: "Akuma Shipping",
@@ -223,7 +223,7 @@ const CompaniesSection = () => {
       year: "2020",
       description: "Global shipping and maritime transport solutions",
       location: "UK",
-      email: "info@akumashipping.com",
+      email: "akuma@remigellagroup.com",
     },
     {
       name: "Sicurezza Security",
@@ -232,7 +232,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "Professional security and protection services",
       location: "Nigeria",
-      email: "info@sicurezzasecurity.com",
+      email: "sicurezza@remigellagroup.com",
     },
     {
       name: "Rengo Foods",
@@ -241,7 +241,7 @@ const CompaniesSection = () => {
       year: "2021",
       description: "Premium table water production and distribution",
       location: "Nigeria",
-      email: "info@rengofoods.com",
+      email: "rengo@remigellagroup.com",
     },
     {
       name: "Ohamadike FC",
@@ -338,7 +338,10 @@ const CompaniesSection = () => {
                 {company.email && (
                   <div className="company-contact">
                     <Mail size={16} />
-                    <a href={`mailto:${company.email}`} className="company-email">
+                    <a
+                      href={`mailto:${company.email}`}
+                      className="company-email"
+                    >
                       {company.email}
                     </a>
                   </div>
