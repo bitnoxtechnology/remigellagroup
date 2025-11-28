@@ -168,7 +168,7 @@ const CompaniesSection = () => {
       email: "gentrade@remigellagroup.com",
     },
     {
-      name: "Texas Kitchen Limited",
+      name: "Texas Kitchens Limited",
       icon: ShoppingBag,
       sector: "Quick Service Restaurants",
       year: "2019",
