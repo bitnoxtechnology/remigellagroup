@@ -82,7 +82,7 @@ const Footer = () => {
 
             {/* Companies */}
             <div className="footer-column">
-              <h4>Our Companies</h4>
+              <h4>Organizations</h4>
               <ul className="footer-links">
                 {companies.map((company, idx) => (
                   <motion.li
