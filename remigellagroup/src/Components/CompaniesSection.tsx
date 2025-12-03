@@ -114,8 +114,19 @@ const CompaniesSection = () => {
       year: "2018",
       description:
         "Premier real estate development and property management services",
-      location: "Nigeria & UK",
+      location: "UK",
       email: "bellavita@remigellagroup.com",
+    },
+    {
+      name: "Bella Vita Properties Nigeria Limited",
+      icon: Home,
+      sector: "Real Estate",
+      year: "2018",
+      description:
+        "Premier real estate development and property management services",
+      location: "Nigeria",
+      email: "bellavita@remigellagroup.com",
+      regNo: "1627487",
     },
     {
       name: "Valpantena Global Oil and Gas UK Limited",
@@ -126,6 +137,17 @@ const CompaniesSection = () => {
         "Oil and gas exploration, marketing and petroleum products distribution",
       location: "Multi-National",
       email: "valpantena@remigellagroup.com",
+    },
+    {
+      name: "Valpantena Global Oil and Gas Nigeria Limited",
+      icon: Fuel,
+      sector: "Energy",
+      year: "2018",
+      description:
+        "Oil and gas exploration, marketing and petroleum products distribution",
+      location: "Nigeria",
+      email: "valpantena@remigellagroup.com",
+      regNo: "1513970",
     },
     {
       name: "Grand Afrique Global Foods Limited",

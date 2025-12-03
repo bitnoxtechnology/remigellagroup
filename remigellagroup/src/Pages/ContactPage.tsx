@@ -122,7 +122,7 @@ const ContactPage = () => {
     {
       location: "Dubai, UAE",
       address: "Suite 308, Mohammed Al Qaizi Building, Deira, P.O Box 116123",
-      phone: ["+971 XXX XXXXX"],
+      phone: [],
       email: ["dubai@remigellagroup.com"],
       hours: "Sun - Thu: 9:00 AM - 5:00 PM",
       image: officeImg2,
@@ -132,7 +132,7 @@ const ContactPage = () => {
       location: "Togo Office",
       address:
         "540 Rue des Hydrocarbures, Soted de L'Afrique, Tokin BP. 20761 Lome",
-      phone: ["+228 XXX XXXXX"],
+      phone: [],
       email: ["togo@remigellagroup.com"],
       hours: "Mon - Fri: 8:00 AM - 5:00 PM",
       image: officeImg1,
@@ -141,7 +141,7 @@ const ContactPage = () => {
     {
       location: "Benin Office",
       address: "Zone des Ambassades 06 BP 2621 Cotonou, République du Benin",
-      phone: ["+229 XXX XXXXX"],
+      phone: [],
       email: ["benin@remigellagroup.com"],
       hours: "Mon - Fri: 8:00 AM - 5:00 PM",
       image: officeImg2,

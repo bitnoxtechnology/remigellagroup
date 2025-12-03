@@ -142,7 +142,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button className="nav-link dropdown-trigger">
-              Companies <ChevronDown size={16} />
+              Organization <ChevronDown size={16} />
             </button>
             {activeDropdown === "companies" && (
               <div
