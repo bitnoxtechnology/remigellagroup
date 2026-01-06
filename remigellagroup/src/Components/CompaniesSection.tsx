@@ -236,7 +236,7 @@ const CompaniesSection = () => {
       year: "2019",
       description: "International school providing world-class education",
       location: "Nigeria",
-      email: "primagado@remigellagroup.com",
+      email: "primagrado@remigellagroup.com",
     },
     {
       name: "Verona Int. Forex Nig Limited",
